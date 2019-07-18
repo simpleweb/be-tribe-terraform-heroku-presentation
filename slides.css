@@ -1,0 +1,15 @@
+.slide-content {
+  overflow: visible;
+}
+
+@media print {
+  @page {
+    size: A4 landscape;
+  }
+
+  .slide-content {
+    page-break-before: always;
+    height: auto;
+    border: none;
+  }
+}
